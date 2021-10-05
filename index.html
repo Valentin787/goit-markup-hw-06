@@ -396,8 +396,8 @@
             
             <div class="footer-sub">
                 <p class="social-text">ПOДПИШИТЕСЬ НА РАССЫЛКУ </p>
-                <input class="footer-input" type="email" placeholder="E-mail">
-                <label class="input-text" for="email" name="email" id="email"  ></label>
+                <input class="footer-input" type="email" name="email" id="email" placeholder="E-mail">
+                <label class="input-text" for="email"></label>
                 <button data-modal-open class="button-sub" type="button">Подписаться
                     <svg class="sub-svg" width=24px height=24px >
                         <use href="./images/icon/icons.svg#icon-send"></use>
@@ -410,7 +410,7 @@
 <!--Modal form-->   
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <p></p>
+
             <button class="modal-button">
                 <svg class="modal-svg" width=18px height=18px data-modal-close      >
                     <use href="./images/icon/icons.svg#icon-close"></use>
@@ -418,34 +418,34 @@
                 </button>
 
                 <form class="js-speaker-form" autocomplete="on">
-                    <h2 class="form-head" >Оставьте свои данные, мы вам перезвоним</h2>
-                    <ul class="form-list"> 
-                        <li class="form-item">
+                    <p class="form-head" >Оставьте свои данные, мы вам перезвоним</p>
+                    <div class="form-list"> 
+                        <div class="form-item">
                             <label class="form-name" for="name"> Имя</label>
                             <input class="form-input" type="text" name="name" id="name">
                             <svg class="form-svg" width=18px height=18px>
                                 <use href="./images/icon/icons.svg#icon-person"></use>
                             </svg>
-                        </li>
-                        <li class="form-item">
+                        </div>
+                        <div class="form-item">
                             <label class="form-name" for="tel">Телефон </label>
                             <input class="form-input" type="tel" name="tel" id="tel">
                             <svg class="form-svg" width=18px height=18px>
                                 <use href="./images/icon/icons.svg#icon-phone"></use>
                             </svg>
-                        </li>
-                        <li class="form-item">
+                        </div>
+                        <div class="form-item">
                             <label class="form-name" for="mail"> Почта</label>
                             <input class="form-input" type="email" name="mail" id="mail">
                             <svg class="form-svg" width=18px height=18px>
                                 <use href="./images/icon/icons.svg#icon-email"></use>
                             </svg>
-                        </li>
-                        <li class="form-item">
+                        </div>
+                        <div class="form-item">
                             <label class="form-name" for="comment">Комментарий</label>
-                            <textarea class="form-textarea" name="comment" id="comment" cols="30" rows="8"placeholder="Введите текст"></textarea>
-                        </li>
-                        </ol>
+                            <textarea class="form-textarea" name="comment" id="comment" cols="30" rows="8" placeholder="Введите текст"></textarea>
+                        </div>
+                    </div>
                 
                         <label class="label">
                             <input class="checkbox" type="checkbox" name="label">
@@ -453,16 +453,12 @@
                             <span>Соглашаюсь с рассылкой и принимаю</span>
                 
                             <a class="policy-link" href="">Условия договора</a>
-                        </label>
-
-                        
+                        </label>                     
                         <button type="submit" class="form-button">Отправить</button>
                 </form>
         </div>
     </div>
-    
 
-    </div>
     <script src="./js/speaker.js"></script>
     <script src="./js/modal.js"></script>
 </body>

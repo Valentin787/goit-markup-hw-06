@@ -76,6 +76,7 @@ h3{
 /*Header-section*/
 
     .header-section{
+        border: 1px solid var(--header-line);
         background-color:var(--primary-color);
         border-bottom: var(--header-line);       
 
@@ -466,7 +467,7 @@ h3{
     }
 
     .footer-input{
-        max-width: 358px;
+        min-width: 358px;
         height: 50px;
 
         margin-right: 12px;
@@ -823,29 +824,29 @@ h3{
     position: absolute;
    
     opacity: 1;
-    top: 15%;
-    left: 35%;
-    
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
 
-    padding: 15px;
-    min-height: 528px;
-    min-width: 581px;
+
 
     background-color: var(--primary-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    transform: scale(1);
+    
 }
 .modal-button{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     
     top: 17px;
     right: 17px;
 
-    padding: 4px;
+    
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -858,7 +859,7 @@ h3{
     fill: var(--accent-text);
 }
 .form-head{
-    margin: 40px auto 12px;
+    margin:12px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -870,6 +871,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px;
     
     
 }
@@ -897,7 +899,7 @@ h3{
 .form-input{   
     width:448px;
     height: 40px;
-    padding-left: 30px;
+    padding-left: 42px;
 
     border: 1px solid rgba(33, 33, 33, 0.2) ;
     border-radius: 4px;
@@ -913,8 +915,8 @@ h3{
 
 }
 .form-input:focus{
-    outline: none;
-    border: 4px solid var(--accent-text);
+    outline: transparent;
+    border: 1px solid var(--accent-text);
     cursor: text;
     
 }
@@ -936,8 +938,8 @@ h3{
 
 }
 .form-textarea:focus{
-    outline: none;
-    border: 4px solid var(--accent-text);
+    outline: transparent;
+    border: 1px solid var(--accent-text);
     cursor: text;
     
 }
@@ -951,7 +953,8 @@ textarea{
 }
 .form-button{
     display: flex;
-    margin: 30px auto 40px auto;
+    margin: 0 auto;
+    margin-top: 30px;
     padding: 10px 55px;
 
     font-weight: 700;
@@ -972,7 +975,7 @@ textarea{
 position: absolute;
 cursor: pointer;
 top: 50%;
-left: 1%;
+left: 15px;
 
 }
 .label{
